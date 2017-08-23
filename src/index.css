@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  height: 740px;
+  max-height: 740px;
+  overflow-y: scroll;
+  background: linear-gradient(#ad8961,#292826, #04406d);
+}

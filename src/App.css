@@ -1,0 +1,254 @@
+
+@keyframes slide {
+  from {
+    transform: translateX(500%);
+ }
+ to {
+    transform:translateX(0px);
+ }
+}
+@keyframes slind {
+  0% {
+    transform: translateX(-500%);
+ }
+ 100% {
+    transform:translateX(0px);
+ }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+@keyframes frames {
+  from {
+  visibility: hidden;
+  opacity: 0;
+  }
+  to{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes mapBorder {
+  from {
+    opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+
+path {
+  transition: .5s;
+}
+path:hover {
+  stroke: #04406d;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #90d9e5;
+  cursor: pointer;
+}
+button {
+  opacity: 1;
+  font-size: 1vw;
+  width: 20%;
+  height: 3em;
+  border: 2px solid #e5ecea;
+  outline: none;
+  background: #e5ecea;
+  transition: .4s;
+  margin: 1em;
+  letter-spacing: 1px;
+}
+button:hover {
+  border: black solid 2px;
+  border-radius: 1.5em;
+  letter-spacing: 5px;
+}
+
+#AL,#AK,#AR,#AZ {
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
+  transform: translateX(2000px);
+}
+#CA,#CO,#CT,#DE {
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  transform: translateX(2000px);
+}
+#FL,#GA,#HI,#ID {
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+  transform: translateX(2000px);
+}
+#IL,#IN,#IA,#KS {
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.9s;
+  transform: translateX(2000px);
+}
+#KY,#LA,#ME,#MD{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.1s;
+  transform: translateX(2000px);
+}
+#MA,#MI,#MN,#MS{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.3s;
+  transform: translateX(2000px);
+}
+#MO,#MT,#NE,#NV{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  transform: translateX(2000px);
+}
+#NH,#NJ,#NM,#NY{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.7s;
+  transform: translateX(2000px);
+}
+#NC,#ND,#OH,#OK{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.9s;
+  transform: translateX(2000px);
+}
+#OR,#PA,#RI,#SC{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.1s;
+  transform: translateX(2000px);
+}
+#SD,#TN,#TX,#UT{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.3s;
+  transform: translateX(2000px);
+}
+#VT,#VA,#WA,#WV{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+  transform: translateX(2000px);
+}
+#WI,#WY,#DC{
+  animation: slide .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.7s;
+  transform: translateX(2000px);
+}
+
+#frames:hover{
+  fill: none;
+  cursor:default;
+  stroke: #a9a9a9;
+}
+#frames {
+  opacity: 0;
+  animation: frames 2s;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+#percentage {
+  color: #e5ecea;
+  opacity: 0;
+  font-size: 2.5vw;
+  animation: appear 2s;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+#pop {
+  padding: 5px;
+  border-top: #e5ecea 2px solid;
+  opacity: 0;
+  animation: appear 2s;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+  margin-top: 5px;
+  color: #e5ecea;
+  letter-spacing: 3px;
+  transform: translateY(-68vw)
+}
+#map {
+  padding: 10px;
+  transform: translateY(-68vw);
+}
+#app{
+  opacity: 1;
+}
+#show {
+  transform: translateX(-2000px);
+  animation: slind .2s;
+  animation-fill-mode: forwards;
+  animation-delay: .6s;
+  transition: .2s;
+  border: #292826 2px solid;
+  background:#04406d;
+  padding: .5em;
+  /*border-radius: 1em;*/
+  width: 20%;
+  margin: 1em;
+  color:#e5ecea;
+  font-weight: bold;
+  letter-spacing: .5px;
+  font-size: 1.5vw;
+}
+#show:hover {
+  border-radius: 100px;
+  border:#04406d 2px solid;
+  letter-spacing: 3px;
+  color:#04406d;
+  background: #e5ecea;
+}
+#buttons {
+  z-index: -1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+
+}
+
+.App {
+  text-align: center;
+  height: 100%
+}
+
+.App-header {
+  color: #e5ecea;
+  height: 25px;
+  padding: 3.5vw;
+  font-weight: 900;
+  letter-spacing: normal;
+  font-size: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide .5s ease;
+}
+.Background {
+background: black;
+}
