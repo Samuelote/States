@@ -1,9 +1,11 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
-  height: 740px;
-  max-height: 740px;
-  overflow-y: scroll;
-  background: linear-gradient(#ad8961,#292826, #04406d);
+  font-family: 'Black Han Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: gainsboro;
+  letter-spacing: 2px;
+  height: 100vh;
+  width: 100vw;
 }

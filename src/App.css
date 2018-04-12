@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
 
 @keyframes slide {
   from {
@@ -43,30 +45,33 @@
 }
 
 path {
-  transition: .5s;
+  transition: .1s;
+  background: black;
 }
 path:hover {
-  stroke: #04406d;
-  stroke-width:2px;
+  stroke: #95A7B0;
+  stroke-width: 2px;
   stroke-linejoin: round;
-  fill: #90d9e5;
+  fill: #2e3840;
   cursor: pointer;
 }
 button {
   opacity: 1;
   font-size: 1vw;
+  font-weight: 900;
   width: 20%;
   height: 3em;
-  border: 2px solid #e5ecea;
+  border: 2px solid transparent;
   outline: none;
-  background: #e5ecea;
+  background: #4C5C6A;
   transition: .4s;
   margin: 1em;
   letter-spacing: 1px;
+  border-radius: 1.5em;
+  padding: 0px;
 }
 button:hover {
   border: black solid 2px;
-  border-radius: 1.5em;
   letter-spacing: 5px;
 }
 
@@ -161,7 +166,7 @@ button:hover {
   animation-fill-mode: forwards;
 }
 #percentage {
-  color: #e5ecea;
+  color: #000000;
   opacity: 0;
   font-size: 2.5vw;
   animation: appear 2s;
@@ -170,13 +175,13 @@ button:hover {
 }
 #pop {
   padding: 5px;
-  border-top: #e5ecea 2px solid;
+  border-top: #000000 2px solid;
   opacity: 0;
   animation: appear 2s;
   animation-delay: 4.6s;
   animation-fill-mode: forwards;
   margin-top: 5px;
-  color: #e5ecea;
+  color: #000000;
   letter-spacing: 3px;
   transform: translateY(-68vw)
 }
@@ -193,23 +198,23 @@ button:hover {
   animation-fill-mode: forwards;
   animation-delay: .6s;
   transition: .2s;
-  border: #292826 2px solid;
-  background:#04406d;
+  /* border: #292826 2px solid; */
+  background:#95A7B0;
   padding: .5em;
   /*border-radius: 1em;*/
   width: 20%;
   margin: 1em;
-  color:#e5ecea;
+  color:#000000;
   font-weight: bold;
   letter-spacing: .5px;
   font-size: 1.5vw;
+  border-radius: 100px;
 }
 #show:hover {
-  border-radius: 100px;
-  border:#04406d 2px solid;
+  /* border:#95A7B0 2px solid; */
   letter-spacing: 3px;
-  color:#04406d;
-  background: #e5ecea;
+  /* color:#95A7B0; */
+  /* background: #000000; */
 }
 #buttons {
   z-index: -1;
@@ -223,7 +228,6 @@ button:hover {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
@@ -234,21 +238,16 @@ button:hover {
 
 .App {
   text-align: center;
-  height: 100%
 }
 
 .App-header {
-  color: #e5ecea;
   height: 25px;
   padding: 3.5vw;
-  font-weight: 900;
-  letter-spacing: normal;
+  font-weight: 100;
+  letter-spacing: 2px;
   font-size: 3.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: slide .5s ease;
-}
-.Background {
-background: black;
 }
